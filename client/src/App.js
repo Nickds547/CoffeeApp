@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import {Navbar} from './components';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import {Homepage} from './pages';
+
 import './App.css';
 
 class App extends Component {
@@ -26,9 +29,11 @@ state = {
 
   render() {
     return (
-      <div className="App">
-        <Navbar/>
-      </div>
+      <Router>
+        <Switch>
+          <Route path = "*" render={()=>(<Homepage/>)}/>
+        </Switch>
+      </Router>
     );
   }
 }
