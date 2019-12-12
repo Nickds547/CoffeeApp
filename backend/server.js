@@ -13,10 +13,18 @@ const router = express.Router();
 
 // this is our MongoDB database
 const dbRoute =
-  'mongodb+srv://nickds54:backpack1@cluster0-x4g8w.mongodb.net/test;
+  'mongodb+srv://nickds54:backpack1@cluster0-x4g8w.mongodb.net/test';
 
 // connects our back end code with the database
-mongoose.connect(dbRoute, { useNewUrlParser: true });
+mongoose
+.connect("process.env.MONGO_URI", {
+useUnifiedTopology: true,
+useNewUrlParser: true,
+})
+.then(() => console.log('DB Connected!'))
+.catch(err => {
+console.log("DB Connection Error: ${err.message}");
+});
 
 let db = mongoose.connection;
 
