@@ -1,11 +1,12 @@
 import React from 'react';
-import {Navbar} from '../components';
+import {Navbar,Slider} from '../components';
 
 
 const Homepage = () => {
     return(
         <div>
             <Navbar/>
+            <Slider/>
         </div>
     );
 }

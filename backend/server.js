@@ -6,18 +6,18 @@ const bodyParser = require('body-parser');
 const logger = require('morgan');
 const Data = require('./data');
 
-const API_PORT = 3001;
+const API_PORT = 5000;
 const app = express();
 app.use(cors());
 const router = express.Router();
 
 // this is our MongoDB database
 const dbRoute =
-  'mongodb+srv://nickds54:backpack1@cluster0-x4g8w.mongodb.net/test';
+  'mongodb+srv://nicksalter:backpack1@cluster0-x4g8w.mongodb.net/test';
 
 // connects our back end code with the database
 mongoose
-.connect("process.env.MONGO_URI", {
+.connect(dbRoute, {
 useUnifiedTopology: true,
 useNewUrlParser: true,
 })

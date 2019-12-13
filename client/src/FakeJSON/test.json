@@ -1,0 +1,8 @@
+{
+    "images":[
+            {"id":0, "src":"../../public/Outside.jpg"},
+            {"id":1, "src":"../../public/Food.jpg"},
+            {"id":2, "src":"../../public/coffee_mugs.jpg"},
+            {"id":3, "src":"../../public/Brewhouse_counter.jpg"}
+            ]
+}
