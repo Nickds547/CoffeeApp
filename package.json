@@ -15,7 +15,10 @@
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "mongoose": "^5.8.0",
-    "morgan": "^1.9.1"
+    "morgan": "^1.9.1",
+    "react-gesture-gallery": "^1.1.0",
+    "react-gesture-responder": "^2.1.0",
+    "styled-components": "^4.4.1"
   },
   "devDependencies": {},
   "repository": {
